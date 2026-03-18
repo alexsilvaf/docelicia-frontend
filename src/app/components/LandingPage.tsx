@@ -22,6 +22,11 @@ const NAV_ITEMS = [
 ];
 
 const HERO_IMG = "https://images.unsplash.com/photo-1749996089724-268703b8c4dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY2FmZSUyMGludGVyaW9yJTIwd2FybSUyMHBhc3RyaWVzJTIwY29mZmVlfGVufDF8fHx8MTc3Mzg1MTk5NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
+const BUSINESS_PHONE = "(28) 99934-8795";
+const BUSINESS_PHONE_LINK = "tel:+5528999348795";
+const WHATSAPP_LINK = "https://wa.me/5528999348795?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20card%C3%A1pio%20da%20Docel%C3%ADcia.";
+const GOOGLE_MAPS_LINK = "https://www.google.com/maps/search/?api=1&query=Doce+L%C3%ADcia+Doceria+e+Caf%C3%A9%2C+Rua+Santa+Leopoldina%2C+725%2C+Centro%2C+Pi%C3%BAma+-+ES";
+const GOOGLE_MAPS_EMBED = "https://maps.google.com/maps?hl=pt-BR&q=Doce%20L%C3%ADcia%20Doceria%20e%20Caf%C3%A9%2C%20Rua%20Santa%20Leopoldina%2C%20725%2C%20Centro%2C%20Pi%C3%BAma%20-%20ES&ie=UTF8&t=&z=17&iwloc=B&output=embed";
 
 const HIGHLIGHTS = [
   {
@@ -99,7 +104,7 @@ export function LandingPage() {
           {/* Social icons — right side, always visible */}
           <div className="flex items-center gap-1">
             <a
-              href="https://wa.me/"
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-foreground cursor-pointer transition-colors min-w-[36px] min-h-[36px] flex items-center justify-center"
@@ -171,7 +176,7 @@ export function LandingPage() {
             <div className="hidden md:block w-px h-8 bg-border" />
             <div>
               <label className="text-muted-foreground">Endereço</label>
-              <p className="text-card-foreground">Praça das Garças, 725 — Limão, Piúma-ES</p>
+              <p className="text-card-foreground">Rua Santa Leopoldina, 725 — Centro, Piúma-ES</p>
             </div>
           </div>
         </div>
@@ -250,8 +255,9 @@ export function LandingPage() {
             <div className="flex flex-col gap-3">
               <div className="bg-background border border-border rounded-lg p-4">
                 <label className="text-muted-foreground block mb-1">Endereço</label>
-                <p className="text-card-foreground">Praça das Garças, nº 725</p>
-                <p className="text-card-foreground">Bairro Limão, Piúma-ES</p>
+                <p className="text-card-foreground">Rua Santa Leopoldina, nº 725</p>
+                <p className="text-card-foreground">Centro, Piúma-ES</p>
+                <label className="text-muted-foreground block mt-1">Referência: Praça das Garças, em frente ao Bar do Bagre</label>
               </div>
 
               <div className="bg-background border border-border rounded-lg p-4">
@@ -260,12 +266,37 @@ export function LandingPage() {
                 <p className="text-card-foreground">Sábado: 14h às 18h</p>
                 <label className="text-muted-foreground block mt-1">Dom e Seg: Fechado</label>
               </div>
+
+              <div className="bg-background border border-border rounded-lg p-4">
+                <label className="text-muted-foreground block mb-1">Contato</label>
+                <a href={BUSINESS_PHONE_LINK} className="block text-card-foreground hover:text-primary transition-colors">
+                  {BUSINESS_PHONE}
+                </a>
+                <div className="mt-3 flex flex-col gap-2 sm:flex-row">
+                  <a
+                    href={WHATSAPP_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-primary text-primary-foreground rounded-button text-center hover:opacity-90 transition-opacity"
+                  >
+                    Falar no WhatsApp
+                  </a>
+                  <a
+                    href={GOOGLE_MAPS_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 border border-border rounded-button text-card-foreground text-center hover:bg-muted transition-colors"
+                  >
+                    Abrir no Maps
+                  </a>
+                </div>
+              </div>
             </div>
 
             <div className="overflow-hidden rounded-lg border border-border bg-muted aspect-[4/3] md:aspect-auto min-h-[320px]">
               <iframe
                 title="Mapa da Docelícia"
-                src="https://maps.google.com/maps?hl=pt-BR&q=Docel%C3%ADcia%20Cafeteria%20e%20Confeitaria%2C%20Pra%C3%A7a%20das%20Gar%C3%A7as%2C%20725%2C%20Lim%C3%A3o%2C%20Pi%C3%BAma-ES&ie=UTF8&t=&z=17&iwloc=B&output=embed"
+                src={GOOGLE_MAPS_EMBED}
                 className="h-full w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
