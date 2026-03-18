@@ -37,4 +37,4 @@ npm run dev
 
 ## Observação
 
-O export recebido na pasta `figma` não inclui os binários dos imports `figma:asset/*`. Para manter o projeto fiel ao material exportado e ainda permitir build em Vite, esses imports foram preservados com fallback visual quando o asset não estiver disponível.
+As capturas adicionadas em `assets/` foram conectadas ao projeto para substituir os imports do export original do Figma que não vinham com os binários locais.

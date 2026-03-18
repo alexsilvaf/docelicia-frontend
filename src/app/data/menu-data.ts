@@ -15,24 +15,24 @@ export interface MenuCategory {
 }
 
 // ── Image URLs ──
-// Real product photos (figma:asset) where available, Unsplash fallbacks otherwise
-import toastReal from "figma:asset/efe0e44f0b3633eeefb10460e157c6b3db1624e3.png";
-import croissantReal from "figma:asset/44ef2cb3db65f759084040633dffc9a37ed7c38d.png";
-import waffleSorveteReal from "figma:asset/8d94192d407532f50a44e02a1a68a5823d65731c.png";
-import waffleMelReal from "figma:asset/8b99101626550957592655b7a5b8ef64410ab19a.png";
-import tabuaWafflesReal from "figma:asset/c32c7c023ae53920750565cbee799def8d5f9f23.png";
-import frapeChocolateReal from "figma:asset/b792c1b14078b8bd794685cb2eaf53064c2e4a64.png";
-import frapeMorangoReal from "figma:asset/96d83b20b314dadffe6be6cd5a1bbc55fed13d3e.png";
-import brownieSupremoReal from "figma:asset/b1824cdd2ad1841b870eaa58a85a9a786a68907f.png";
-import tortaSalgadaReal from "figma:asset/24d8790fc7e5a0513fc1d8949221b116eb187518.png";
-import petitGateauReal from "figma:asset/a8414d15b6ac25ab8f0725c5eb1a5d44d18abed5.png";
-import waffleNutellaReal from "figma:asset/4f1969753b89efc08fcf9688dcca0d36126acc67.png";
-import paoQueijoReal from "figma:asset/8e10ba70d2df2373cf4dc8ad025c0450946b90bc.png";
-import quicheReal from "figma:asset/95f1b936716d2087da26e5d90933f3e464e1c663.png";
-import brunchReal from "figma:asset/298b1d1553fa028997cbec4fa39ef5a2ab19f722.png";
-import batataReal from "figma:asset/62610195e48c755b6f62032e0ad85350211e8515.png";
-import escondidinhoReal from "figma:asset/b9196ccb42c6ab8968e0b9caafb6bbac6724e531.png";
-import sodaItalianaReal from "figma:asset/d0a3b490f6129623e0e01e11b57ce451d978ac2f.png";
+// Local screenshots captured from the remaining Figma assets where available.
+import toastReal from "../../../assets/toast.png";
+import croissantReal from "../../../assets/croissant.png";
+import waffleSorveteReal from "../../../assets/waffle-com-sorvete.png";
+import waffleMelReal from "../../../assets/waffles-com-mel.png";
+import tabuaWafflesReal from "../../../assets/tabua-de-waffles.png";
+import frapeChocolateReal from "../../../assets/frape-de-chocolate.png";
+import frapeMorangoReal from "../../../assets/frape-de-morango.png";
+import brownieSupremoReal from "../../../assets/brownie-supremo.png";
+import tortaSalgadaReal from "../../../assets/torta-salgada.png";
+import petitGateauReal from "../../../assets/petit-gateau.png";
+import waffleNutellaReal from "../../../assets/waffle-com-nutella.png";
+import paoQueijoReal from "../../../assets/pao-de-queijo.png";
+import quicheReal from "../../../assets/quiche.png";
+import brunchReal from "../../../assets/brunch-completo.png";
+import batataReal from "../../../assets/batata-recheada.png";
+import escondidinhoReal from "../../../assets/escondidinho.png";
+import sodaItalianaReal from "../../../assets/soda-italiana.png";
 
 const IMG = {
   paoQueijo: paoQueijoReal,

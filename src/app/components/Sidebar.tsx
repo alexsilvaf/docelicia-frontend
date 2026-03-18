@@ -1,7 +1,5 @@
-import { LayoutDashboard, Package, AlertTriangle, BarChart3, Settings } from "lucide-react";
+import { LayoutDashboard, Package, AlertTriangle, BarChart3, Settings, Coffee } from "lucide-react";
 import { useNavigate } from "react-router";
-import logo from "figma:asset/30db73ee53bbdad3229e7f72bda143b06096fbc6.png";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface SidebarProps {
   currentPage: string;
@@ -24,7 +22,9 @@ export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
       {/* ── Mobile: top header bar ── */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-40 bg-sidebar border-b border-sidebar-border flex items-center justify-between px-4 h-12">
         <button onClick={() => navigate("/")} className="flex items-center gap-2 cursor-pointer">
-          <ImageWithFallback src={logo} alt="Docel&#237;cia" className="w-7 h-7 rounded-full object-cover" />
+          <div className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <Coffee className="h-4 w-4" />
+          </div>
           <h4 className="text-sidebar-foreground">Docel&#237;cia</h4>
         </button>
         <label className="text-muted-foreground">Controle de Estoque</label>
@@ -58,7 +58,9 @@ export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
       <aside className="hidden lg:flex fixed lg:static z-50 top-0 left-0 h-full w-64 bg-sidebar border-r border-sidebar-border flex-col">
         <div className="p-6 flex items-center gap-3 border-b border-sidebar-border">
           <button onClick={() => navigate("/")} className="flex items-center gap-3 cursor-pointer">
-            <ImageWithFallback src={logo} alt="Docel&#237;cia" className="w-12 h-12 rounded-full object-cover" />
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <Coffee className="h-6 w-6" />
+            </div>
             <div>
               <h4 className="text-sidebar-foreground">Docel&#237;cia</h4>
               <label className="text-muted-foreground">Controle de Estoque</label>
