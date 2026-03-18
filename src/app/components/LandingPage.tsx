@@ -265,7 +265,7 @@ export function LandingPage() {
             <div className="overflow-hidden rounded-lg border border-border bg-muted aspect-[4/3] md:aspect-auto min-h-[320px]">
               <iframe
                 title="Mapa da Docelícia"
-                src="https://www.google.com/maps?q=Pra%C3%A7a%20das%20Gar%C3%A7as%2C%20725%2C%20Lim%C3%A3o%2C%20Pi%C3%BAma-ES&z=17&output=embed"
+                src="https://maps.google.com/maps?hl=pt-BR&q=Docel%C3%ADcia%20Cafeteria%20e%20Confeitaria%2C%20Pra%C3%A7a%20das%20Gar%C3%A7as%2C%20725%2C%20Lim%C3%A3o%2C%20Pi%C3%BAma-ES&ie=UTF8&t=&z=17&iwloc=B&output=embed"
                 className="h-full w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
