@@ -74,7 +74,7 @@ export function LandingPage() {
         <div className="max-w-6xl mx-auto px-4 lg:px-6 flex items-center justify-between h-12 md:h-14">
           <button onClick={() => navigate("/dashboard")} className="flex items-center gap-1.5 cursor-pointer">
             <Coffee className="w-5 h-5 text-primary" />
-            <h4 className="text-foreground">Docel&#237;cia</h4>
+            <h4 className="text-foreground">Docelícia</h4>
           </button>
 
           {/* Desktop nav — center */}
@@ -165,13 +165,13 @@ export function LandingPage() {
         <div className="max-w-6xl mx-auto px-4 lg:px-6 py-4 md:py-5">
           <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
             <div>
-              <label className="text-muted-foreground">Hor&#225;rio</label>
-              <p className="text-card-foreground">Ter a Sex &middot; 15h&ndash;20h &middot; S&#225;b &middot; 14h&ndash;18h</p>
+              <label className="text-muted-foreground">Horário</label>
+              <p className="text-card-foreground">Ter a Sex · 15h–20h · Sáb · 14h–18h</p>
             </div>
             <div className="hidden md:block w-px h-8 bg-border" />
             <div>
-              <label className="text-muted-foreground">Endere&#231;o</label>
-              <p className="text-card-foreground">Pra&#231;a das Gar&#231;as, 725 &mdash; Lim&#227;o, Pi&#250;ma-ES</p>
+              <label className="text-muted-foreground">Endereço</label>
+              <p className="text-card-foreground">Praça das Garças, 725 — Limão, Piúma-ES</p>
             </div>
           </div>
         </div>
@@ -249,15 +249,15 @@ export function LandingPage() {
             {/* Info cards — Wroblewski: tappable, clear affordance */}
             <div className="flex flex-col gap-3">
               <div className="bg-background border border-border rounded-lg p-4">
-                <label className="text-muted-foreground block mb-1">Endere&#231;o</label>
-                <p className="text-card-foreground">Pra&#231;a das Gar&#231;as, n&#176; 725</p>
-                <p className="text-card-foreground">Bairro Lim&#227;o, Pi&#250;ma-ES</p>
+                <label className="text-muted-foreground block mb-1">Endereço</label>
+                <p className="text-card-foreground">Praça das Garças, nº 725</p>
+                <p className="text-card-foreground">Bairro Limão, Piúma-ES</p>
               </div>
 
               <div className="bg-background border border-border rounded-lg p-4">
                 <label className="text-muted-foreground block mb-1">Funcionamento</label>
-                <p className="text-card-foreground">Ter&#231;a a Sexta: 15h &#224;s 20h</p>
-                <p className="text-card-foreground">S&#225;bado: 14h &#224;s 18h</p>
+                <p className="text-card-foreground">Terça a Sexta: 15h às 20h</p>
+                <p className="text-card-foreground">Sábado: 14h às 18h</p>
                 <label className="text-muted-foreground block mt-1">Dom e Seg: Fechado</label>
               </div>
             </div>
@@ -280,9 +280,9 @@ export function LandingPage() {
       <footer className="bg-foreground">
         <div className="max-w-6xl mx-auto px-4 lg:px-6 py-6">
           <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-between">
-            <p className="text-primary-foreground">Docel&#237;cia</p>
+            <p className="text-primary-foreground">Docelícia</p>
             <label className="text-primary-foreground/60 text-center">
-              &#169; 2026 Docel&#237;cia Cafeteria
+              © 2026 Docelícia Cafeteria
             </label>
           </div>
         </div>

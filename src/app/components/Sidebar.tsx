@@ -10,7 +10,7 @@ const navItems = [
   { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
   { id: "estoque", label: "Estoque", icon: Package },
   { id: "alertas", label: "Alertas", icon: AlertTriangle },
-  { id: "relatorios", label: "Relat&#243;rios", icon: BarChart3 },
+  { id: "relatorios", label: "Relatórios", icon: BarChart3 },
   { id: "config", label: "Config", icon: Settings },
 ];
 
@@ -25,7 +25,7 @@ export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
           <div className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/10 text-primary">
             <Coffee className="h-4 w-4" />
           </div>
-          <h4 className="text-sidebar-foreground">Docel&#237;cia</h4>
+          <h4 className="text-sidebar-foreground">Docelícia</h4>
         </button>
         <label className="text-muted-foreground">Controle de Estoque</label>
       </div>
@@ -62,7 +62,7 @@ export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
               <Coffee className="h-6 w-6" />
             </div>
             <div>
-              <h4 className="text-sidebar-foreground">Docel&#237;cia</h4>
+              <h4 className="text-sidebar-foreground">Docelícia</h4>
               <label className="text-muted-foreground">Controle de Estoque</label>
             </div>
           </button>
@@ -87,7 +87,7 @@ export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
           })}
         </nav>
         <div className="p-4 border-t border-sidebar-border">
-          <label className="text-muted-foreground">Ter-Sex: 15h-20h | S&#225;b: 14h-18h</label>
+          <label className="text-muted-foreground">Ter-Sex: 15h-20h | Sáb: 14h-18h</label>
         </div>
       </aside>
     </>
